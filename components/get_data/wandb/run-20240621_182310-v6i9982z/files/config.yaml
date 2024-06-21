@@ -1,0 +1,26 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.31
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.19
+    t:
+      4: 3.9.19
+      5: 0.10.31
+      8:
+      - 5
+artifact_description:
+  desc: null
+  value: Initial preprocessed training dataset
+artifact_name:
+  desc: null
+  value: data_to_be_cleaned
+artifact_type:
+  desc: null
+  value: dataset
+sample:
+  desc: null
+  value: sample2.csv
