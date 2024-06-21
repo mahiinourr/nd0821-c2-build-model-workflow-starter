@@ -7,19 +7,19 @@ entry_points:
 
       sample:
         description: Name of sample to download
-        type: string
+        type: str
 
       artifact_name:
         description: Name for the output artifact
-        type: string
+        type: str
 
       artifact_type:
         description: Type of the output artifact. This will be used to categorize the artifact in the W&B
                      interface
-        type: string
+        type: str
 
       artifact_description:
         description: A brief description of the output artifact
-        type: string
+        type: str
 
     command: "python run.py {sample} {artifact_name} {artifact_type} {artifact_description}"
