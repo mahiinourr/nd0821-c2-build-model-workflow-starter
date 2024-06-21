@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/961310333241716606/6ad6959de5cc4794972c4405e218803e/artifacts
+end_time: 1718991813820
+entry_point_name: ''
+experiment_id: '961310333241716606'
+lifecycle_stage: active
+run_id: 6ad6959de5cc4794972c4405e218803e
+run_name: popular-colt-998
+run_uuid: 6ad6959de5cc4794972c4405e218803e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718991796876
+status: 3
+tags: []
+user_id: root

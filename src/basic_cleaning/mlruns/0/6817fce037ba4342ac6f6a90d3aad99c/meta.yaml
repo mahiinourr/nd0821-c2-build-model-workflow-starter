@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/6817fce037ba4342ac6f6a90d3aad99c/artifacts
+end_time: 1718989712272
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6817fce037ba4342ac6f6a90d3aad99c
+run_name: clean-stoat-734
+run_uuid: 6817fce037ba4342ac6f6a90d3aad99c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718989709005
+status: 4
+tags: []
+user_id: root

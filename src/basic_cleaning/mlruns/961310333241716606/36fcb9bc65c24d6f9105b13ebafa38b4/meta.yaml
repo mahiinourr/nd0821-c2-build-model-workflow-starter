@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/961310333241716606/36fcb9bc65c24d6f9105b13ebafa38b4/artifacts
+end_time: 1718991513040
+entry_point_name: ''
+experiment_id: '961310333241716606'
+lifecycle_stage: active
+run_id: 36fcb9bc65c24d6f9105b13ebafa38b4
+run_name: bittersweet-ox-407
+run_uuid: 36fcb9bc65c24d6f9105b13ebafa38b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718991500885
+status: 3
+tags: []
+user_id: root

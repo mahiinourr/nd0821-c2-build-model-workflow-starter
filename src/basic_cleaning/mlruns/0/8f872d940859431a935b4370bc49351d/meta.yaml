@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/8f872d940859431a935b4370bc49351d/artifacts
+end_time: 1718989986738
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8f872d940859431a935b4370bc49351d
+run_name: crawling-cat-764
+run_uuid: 8f872d940859431a935b4370bc49351d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718989973937
+status: 4
+tags: []
+user_id: root

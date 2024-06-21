@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/6ae845d10ff24284addf292342bac5cd/artifacts
+end_time: 1718993456413
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6ae845d10ff24284addf292342bac5cd
+run_name: omniscient-rat-910
+run_uuid: 6ae845d10ff24284addf292342bac5cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718993442932
+status: 4
+tags: []
+user_id: root

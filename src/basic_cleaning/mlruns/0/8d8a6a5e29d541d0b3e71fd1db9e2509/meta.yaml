@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/8d8a6a5e29d541d0b3e71fd1db9e2509/artifacts
+end_time: 1718994676753
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d8a6a5e29d541d0b3e71fd1db9e2509
+run_name: bald-calf-865
+run_uuid: 8d8a6a5e29d541d0b3e71fd1db9e2509
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718994664834
+status: 3
+tags: []
+user_id: root

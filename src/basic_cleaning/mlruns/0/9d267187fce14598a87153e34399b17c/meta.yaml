@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/9d267187fce14598a87153e34399b17c/artifacts
+end_time: 1718994462638
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d267187fce14598a87153e34399b17c
+run_name: secretive-lark-164
+run_uuid: 9d267187fce14598a87153e34399b17c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718994450779
+status: 4
+tags: []
+user_id: root

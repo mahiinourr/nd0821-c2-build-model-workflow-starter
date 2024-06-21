@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/89479a0f7c3542c38691078f47b229e3/artifacts
+end_time: 1718989353358
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 89479a0f7c3542c38691078f47b229e3
+run_name: upbeat-gnat-29
+run_uuid: 89479a0f7c3542c38691078f47b229e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718989242639
+status: 4
+tags: []
+user_id: root

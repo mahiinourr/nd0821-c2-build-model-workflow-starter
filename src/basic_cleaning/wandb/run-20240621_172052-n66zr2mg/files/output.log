@@ -1,0 +1,32 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Project iti-/nd0821-c2-build-model-workflow-starter-src_basic_cleaning does not contain artifact: "data_to_be_cleaned:v0"
+Traceback (most recent call last):
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/public.py", line 557, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/public.py", line 2759, in __init__
+    self._load()
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/public.py", line 3243, in _load
+    raise ValueError(
+ValueError: Project iti-/nd0821-c2-build-model-workflow-starter-src_basic_cleaning does not contain artifact: "data_to_be_cleaned:v0"
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/run.py", line 93, in <module>
+    go(args)
+  File "/content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/run.py", line 37, in go
+    artifact = run.use_artifact(args.input_artifact)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 2021, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/public.py", line 557, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/public.py", line 2759, in __init__
+    self._load()
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/wandb/apis/public.py", line 3243, in _load
+    raise ValueError(
+wandb.errors.CommError: Project iti-/nd0821-c2-build-model-workflow-starter-src_basic_cleaning does not contain artifact: "data_to_be_cleaned:v0"

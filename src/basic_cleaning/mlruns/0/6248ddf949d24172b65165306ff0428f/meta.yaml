@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/6248ddf949d24172b65165306ff0428f/artifacts
+end_time: 1718993978718
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6248ddf949d24172b65165306ff0428f
+run_name: rebellious-gull-680
+run_uuid: 6248ddf949d24172b65165306ff0428f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718993965407
+status: 4
+tags: []
+user_id: root

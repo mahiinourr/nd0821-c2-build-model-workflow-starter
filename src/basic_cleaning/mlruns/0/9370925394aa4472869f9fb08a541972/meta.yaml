@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/9370925394aa4472869f9fb08a541972/artifacts
+end_time: 1718994888093
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9370925394aa4472869f9fb08a541972
+run_name: exultant-calf-686
+run_uuid: 9370925394aa4472869f9fb08a541972
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718994873719
+status: 3
+tags: []
+user_id: root

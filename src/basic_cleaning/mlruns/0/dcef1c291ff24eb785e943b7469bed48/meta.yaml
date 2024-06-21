@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/dcef1c291ff24eb785e943b7469bed48/artifacts
+end_time: 1718990368867
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dcef1c291ff24eb785e943b7469bed48
+run_name: judicious-whale-238
+run_uuid: dcef1c291ff24eb785e943b7469bed48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718990356624
+status: 4
+tags: []
+user_id: root

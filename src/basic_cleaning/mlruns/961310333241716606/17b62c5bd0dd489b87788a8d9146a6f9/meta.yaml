@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/961310333241716606/17b62c5bd0dd489b87788a8d9146a6f9/artifacts
+end_time: 1718992050495
+entry_point_name: ''
+experiment_id: '961310333241716606'
+lifecycle_stage: active
+run_id: 17b62c5bd0dd489b87788a8d9146a6f9
+run_name: handsome-rook-920
+run_uuid: 17b62c5bd0dd489b87788a8d9146a6f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718992037663
+status: 3
+tags: []
+user_id: root

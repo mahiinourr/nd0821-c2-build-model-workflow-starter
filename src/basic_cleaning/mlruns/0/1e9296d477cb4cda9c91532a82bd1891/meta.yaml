@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/1e9296d477cb4cda9c91532a82bd1891/artifacts
+end_time: 1718994198756
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1e9296d477cb4cda9c91532a82bd1891
+run_name: painted-kite-3
+run_uuid: 1e9296d477cb4cda9c91532a82bd1891
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718994186680
+status: 3
+tags: []
+user_id: root

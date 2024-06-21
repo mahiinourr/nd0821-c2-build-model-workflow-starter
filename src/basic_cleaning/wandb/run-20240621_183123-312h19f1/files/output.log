@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/run.py", line 95, in <module>
+    go(args)
+  File "/content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/run.py", line 42, in go
+    df = pd.read_csv(data_path)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+  File "/usr/local/envs/mlflow-5379b70c4c4420dca1e95244cbe993aa6f71772d/lib/python3.9/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: './artifacts/data_to_be_cleaned:v0/data.csv'

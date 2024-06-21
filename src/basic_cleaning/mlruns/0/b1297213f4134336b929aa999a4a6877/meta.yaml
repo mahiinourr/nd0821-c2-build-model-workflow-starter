@@ -1,0 +1,15 @@
+artifact_uri: file:///content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/mlruns/0/b1297213f4134336b929aa999a4a6877/artifacts
+end_time: 1718990271417
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b1297213f4134336b929aa999a4a6877
+run_name: abrasive-cow-212
+run_uuid: b1297213f4134336b929aa999a4a6877
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1718990256319
+status: 3
+tags: []
+user_id: root
