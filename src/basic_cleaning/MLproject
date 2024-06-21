@@ -4,19 +4,17 @@ conda_env: conda.yml
 entry_points:
   main:
     parameters:
-
-      parameter1:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      parameter2:
-        description: ## ADD DESCRIPTION
-        type: string
-
-      parameter3:
-        description: ## ADD DESCRIPTION
-        type: string
-
-
-    command: >-
-        python run.py  --parameter1 {parameter1}  --parameter2 {parameter2}  --parameter3 {parameter3} 
+      input_artifact:
+        description: "The input artifact to clean"
+        type: str
+      output_artifact:
+        description: "The name of the output artifact"
+        type: str
+      output_type:
+        description: "The type of the output artifact"
+        type: str
+      output_description:
+        description: "A description for the output artifact"
+        type: str
+    command: >
+      python run.py --input_artifact {input_artifact} --output_artifact {output_artifact} --output_type {output_type} --output_description {output_description}

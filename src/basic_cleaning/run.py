@@ -4,54 +4,93 @@ Performs basic cleaning on the data and save the results in Weights & Biases
 """
 import argparse
 import logging
+import pandas as pd
 import wandb
-
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
 
-def go(args):
+def clean_data(df):
+    # Drop rows with missing values in important columns
+    df_cleaned = df.dropna(subset=['neighbourhood_group', 'room_type', 'price', 'minimum_nights'])
 
+    # Convert price to numeric and handle outliers or incorrect values
+    df_cleaned['price'] = pd.to_numeric(df_cleaned['price'], errors='coerce')
+    df_cleaned = df_cleaned[df_cleaned['price'].notna()]
+
+    # Convert latitude and longitude to numeric (if necessary)
+    df_cleaned['latitude'] = pd.to_numeric(df_cleaned['latitude'], errors='coerce')
+    df_cleaned['longitude'] = pd.to_numeric(df_cleaned['longitude'], errors='coerce')
+
+    # Handle categorical data if needed (e.g., encoding, mapping)
+    df_cleaned['room_type'] = df_cleaned['room_type'].map({'Private room': 0, 'Entire home/apt': 1, 'Shared room': 2})
+
+    return df_cleaned
+
+
+def go(args):
     run = wandb.init(job_type="basic_cleaning")
     run.config.update(args)
 
-    # Download input artifact. This will also log that this script is using this
-    # particular version of the artifact
-    # artifact_local_path = run.use_artifact(args.input_artifact).file()
+    # Load input artifact
+    artifact = run.use_artifact('iti-/nd0821-c2-build-model-workflow-starter-components_get_data/data_to_be_cleaned:v0', type='dataset')
+    artifact_dir = artifact.download()
 
-    ######################
-    # YOUR CODE HERE     #
-    ######################
+    # Load data from artifact
+    data_path = artifact_dir + "/sample2.csv"
+    df = pd.read_csv(data_path)
+
+    # Perform data cleaning
+    cleaned_df = clean_data(df)
+
+    # Save cleaned data as a new artifact
+    cleaned_artifact = wandb.Artifact(
+        name=args.output_artifact,
+        type=args.output_type,
+        description=args.output_description
+    )
+
+    # Write cleaned data to artifact
+    cleaned_file_path = artifact_dir + "/cleaned_data.csv"
+    cleaned_df.to_csv(cleaned_file_path, index=False)
+    cleaned_artifact.add_file(cleaned_file_path)
+    run.log_artifact(cleaned_artifact)
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="This script performs basic cleaning on the data")
 
-    parser = argparse.ArgumentParser(description="This steps cleans the data")
 
 
     parser.add_argument(
-        "--parameter1", 
-        type=## INSERT TYPE HERE: str, float or int,
-        help=## INSERT DESCRIPTION HERE,
+        "--input_artifact",
+        type=str,
+        help="Name of the input artifact containing the data to be cleaned",
         required=True
     )
 
     parser.add_argument(
-        "--parameter2", 
-        type=## INSERT TYPE HERE: str, float or int,
-        help=## INSERT DESCRIPTION HERE,
+        "--output_artifact",
+        type=str,
+        help="Name for the output artifact containing the cleaned data",
         required=True
     )
 
     parser.add_argument(
-        "--parameter3", 
-        type=## INSERT TYPE HERE: str, float or int,
-        help=## INSERT DESCRIPTION HERE,
+        "--output_type",
+        type=str,
+        help="Type of the output artifact. This will be used to categorize the artifact in the W&B interface",
         required=True
     )
 
+    parser.add_argument(
+        "--output_description",
+        type=str,
+        help="A brief description of the output artifact",
+        required=True
+    )
 
     args = parser.parse_args()
-
     go(args)
+
