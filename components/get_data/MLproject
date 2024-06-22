@@ -1,5 +1,7 @@
 name: download_file
 conda_env: conda.yml
+# docker_env:
+  # image: udacity-mlflow
 
 entry_points:
   main:
@@ -7,20 +9,19 @@ entry_points:
 
       sample:
         description: Name of sample to download
-        type: str
+        type: string
 
       artifact_name:
         description: Name for the output artifact
-        type: str
+        type: string
 
       artifact_type:
         description: Type of the output artifact. This will be used to categorize the artifact in the W&B
                      interface
-        type: str
+        type: string
 
       artifact_description:
         description: A brief description of the output artifact
-        type: str
+        type: string
 
-    command: "python run.py -P sample="sample2.csv" -P artifact_name="data_to_be_cleaned" -P artifact_type="dataset" -P artifact_description="Initial preprocessed training dataset""
-
+    command: "python run.py {sample} {artifact_name} {artifact_type} {artifact_description}"
