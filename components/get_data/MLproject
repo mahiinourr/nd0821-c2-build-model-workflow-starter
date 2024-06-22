@@ -22,4 +22,5 @@ entry_points:
         description: A brief description of the output artifact
         type: str
 
-    command: "python run.py {sample} {artifact_name} {artifact_type} {artifact_description}"
+    command: "python run.py -P sample="sample2.csv" -P artifact_name="data_to_be_cleaned" -P artifact_type="dataset" -P artifact_description="Initial preprocessed training dataset""
+

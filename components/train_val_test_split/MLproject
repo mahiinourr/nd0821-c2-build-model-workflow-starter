@@ -23,4 +23,4 @@ entry_points:
         type: string
         default: 'none'
 
-    command: "python run.py {input} {test_size} --random_seed {random_seed} --stratify_by {stratify_by}"
+    command: "python run.py /content/nd0821-c2-build-model-workflow-starter/src/basic_cleaning/artifacts/sample.csv:v0 0.2 --random_seed 5"

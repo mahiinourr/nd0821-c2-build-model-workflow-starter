@@ -34,11 +34,12 @@ def go(args):
     run.config.update(args)
 
     # Load input artifact
-    artifact = run.use_artifact('iti-/nd0821-c2-build-model-workflow-starter-components_get_data/data_to_be_cleaned:v0', type='dataset')
+
+    artifact = run.use_artifact('iti-/nyc_airbnb/sample.csv:v0', type='raw_data')
     artifact_dir = artifact.download()
 
     # Load data from artifact
-    data_path = artifact_dir + "/sample2.csv"
+    data_path = artifact_dir + "/sample1.csv"
     df = pd.read_csv(data_path)
 
     # Perform data cleaning
@@ -52,7 +53,7 @@ def go(args):
     )
 
     # Write cleaned data to artifact
-    cleaned_file_path = artifact_dir + "/cleaned_data.csv"
+    cleaned_file_path = artifact_dir + "/cleaned_sample.csv"
     cleaned_df.to_csv(cleaned_file_path, index=False)
     cleaned_artifact.add_file(cleaned_file_path)
     run.log_artifact(cleaned_artifact)

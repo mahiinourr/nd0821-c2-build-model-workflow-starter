@@ -69,3 +69,4 @@ def max_price(request):
         pytest.fail("You must provide max_price")
 
     return float(max_price)
+
